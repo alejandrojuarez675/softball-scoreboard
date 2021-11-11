@@ -1,0 +1,9 @@
+<div class="p-1">
+  <div class="row">
+    <div class="p-1 score__inning">{{ value || defaultValue }}</div>
+  </div>
+  <ng-container *ngIf="isEditable">
+    <input #value type="text" class="form-control" placeholder=''/>
+    <button type="submit" class="w-100" (click)="update()">OK</button>
+  </ng-container>
+</div>
