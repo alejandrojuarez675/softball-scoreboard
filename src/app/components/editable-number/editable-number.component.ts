@@ -9,6 +9,7 @@ import { ScoreboardService } from 'src/app/services/scoreboard.service';
 export class EditableNumberComponent implements OnInit {
 
   @Input() key: string = "";
+  @Input() defaultValue: string = "-";
   @Input() isEditable: boolean = false;
 
   value: string = '-';
