@@ -38,6 +38,6 @@ export class ScoreboardService {
   }
 
   getData(key: string): Observable<string> {
-    return timer(1000, 1000).pipe(map(() => this.cookieService.get(key)));
+    return timer(1000, 1000).pipe(map(() => this.cookieService.get(key) || '0'));
   }
 }
