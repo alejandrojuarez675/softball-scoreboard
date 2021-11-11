@@ -7,13 +7,15 @@ import { AdminPageComponent } from './pages/admin-page/admin-page.component';
 import { DisplayPageComponent } from './pages/display-page/display-page.component';
 import { ScoreboardComponent } from './components/scoreboard/scoreboard.component';
 import { ScoreboardService } from './services/scoreboard.service';
+import { EditableNumberComponent } from './components/editable-number/editable-number.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminPageComponent,
     DisplayPageComponent,
-    ScoreboardComponent
+    ScoreboardComponent,
+    EditableNumberComponent
   ],
   imports: [
     BrowserModule,
