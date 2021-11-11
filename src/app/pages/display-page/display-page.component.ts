@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ScoreboardService } from 'src/app/services/scoreboard.service';
 
 @Component({
   selector: 'app-display-page',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplayPageComponent implements OnInit {
 
-  constructor() { }
+  duck: Observable<string>;
+
+  constructor(
+    private scoreboardService: ScoreboardService,
+  ) {
+    this.duck = this.scoreboardService.getData();
+  }
 
   ngOnInit(): void {
   }

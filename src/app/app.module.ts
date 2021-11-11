@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { AdminPageComponent } from './pages/admin-page/admin-page.component';
 import { DisplayPageComponent } from './pages/display-page/display-page.component';
 import { ScoreboardComponent } from './components/scoreboard/scoreboard.component';
-import { CoockiesService } from './services/coockies.service';
 import { ScoreboardService } from './services/scoreboard.service';
 
 @NgModule({
@@ -21,7 +20,6 @@ import { ScoreboardService } from './services/scoreboard.service';
     AppRoutingModule
   ],
   providers: [
-    CoockiesService,
     ScoreboardService,
   ],
   bootstrap: [AppComponent]

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ScoreboardComponent } from 'src/app/components/scoreboard/scoreboard.component';
+import { ScoreboardService } from 'src/app/services/scoreboard.service';
 
 @Component({
   selector: 'app-admin-page',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private scoreboardService: ScoreboardService,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  onDuckTestClick() {
+    this.scoreboardService.addData();
   }
 
 }
