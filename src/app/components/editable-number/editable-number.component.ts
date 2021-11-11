@@ -9,6 +9,8 @@ import { ScoreboardService } from 'src/app/services/scoreboard.service';
 export class EditableNumberComponent implements OnInit {
 
   @Input() key: string = "";
+  @Input() isEditable: boolean = false;
+
   value: string = '-';
 
   constructor(
@@ -22,13 +24,21 @@ export class EditableNumberComponent implements OnInit {
 
   addOne() {
     this.scoreboardService.addOne(this.key);
+    this.value = "" + (+this.value + 1);
   }
 
   subsOne() {
     this.scoreboardService.subsOne(this.key);
+    this.value = "" + (+this.value - 1);
   }
 
   clear() {
     this.scoreboardService.clear(this.key);
+    this.value = "-";
+  }
+
+  setZero() {
+    this.scoreboardService.updateData(this.key, '0');
+    this.value = "0";
   }
 }
