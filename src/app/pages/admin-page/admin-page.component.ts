@@ -16,8 +16,4 @@ export class AdminPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onDuckTestClick() {
-    this.scoreboardService.addData();
-  }
-
 }

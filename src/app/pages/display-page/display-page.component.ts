@@ -9,12 +9,9 @@ import { ScoreboardService } from 'src/app/services/scoreboard.service';
 })
 export class DisplayPageComponent implements OnInit {
 
-  duck: Observable<string>;
-
   constructor(
     private scoreboardService: ScoreboardService,
   ) {
-    this.duck = this.scoreboardService.getData();
   }
 
   ngOnInit(): void {

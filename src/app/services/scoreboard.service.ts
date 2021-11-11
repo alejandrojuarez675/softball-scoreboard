@@ -4,24 +4,40 @@ import { Observable, timer } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ScoreboardService {
+  constructor(private cookieService: CookieService) {}
 
-  constructor(
-    private cookieService: CookieService,
-  ) { }
-
-  addData(): void {
-    let duck = this.cookieService.get('duck');
-    if (!duck) { duck = "" + 0 }
-    this.cookieService.set('duck', "" + (+duck + 1))
+  updateData(key: string, value: string) {
+    this.cookieService.set(key, value);
   }
 
-  getData(): Observable<string> {
-    return timer(1000, 1000).pipe(
-      map(() => this.cookieService.get('duck'))
-    )
+  addOne(key: string) {
+    let oldValue = this.cookieService.get(key);
+    if (!oldValue) {
+      oldValue = '' + 0;
+    }
+    this.cookieService.set(key, '' + (+oldValue + 1));
   }
 
+  subsOne(key: string) {
+    let oldValue = this.cookieService.get(key);
+    if (!oldValue) {
+      oldValue = '' + 0;
+    }
+    this.cookieService.set(key, '' + (+oldValue - 1));
+  }
+
+  clear(key: string) {
+    this.cookieService.delete(key);
+  }
+
+  clearAll() {
+    this.cookieService.deleteAll();
+  }
+
+  getData(key: string): Observable<string> {
+    return timer(1000, 1000).pipe(map(() => this.cookieService.get(key)));
+  }
 }
