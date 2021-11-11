@@ -1,0 +1,26 @@
+.score__title {
+  color: white;
+  font-size: 6vh;
+  text-align: center;
+  height: 9vh;
+}
+
+.score__inning {
+  background-color: black;
+  color: white;
+  font-size: 6vh;
+  text-align: center;
+  height: 12vh;
+}
+
+.diamond {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #555;
+  background: #428bca;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
