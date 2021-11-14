@@ -1,4 +1,4 @@
-.score__diamont--block {
+.score__diamond--block {
   background-color: black;
   height: 25vh;
   width: 15vw;
@@ -11,11 +11,11 @@
   // transform:translate(0%, 30%);
 }
 
-.score__diamont--enabled-color {
+.score__diamond--enabled-color {
   border: 3px solid #555;
   background: yellow;
 }
-.score__diamont--disabled-color {
+.score__diamond--disabled-color {
   border: 3px solid #555;
   background: black;
 }
@@ -26,25 +26,25 @@
   transform: rotate(45deg);
 }
 
-.score__diamont--home-plate {
+.score__diamond--home-plate {
   position: absolute;
   width: 200px;
   height: 200px;
   transform:translate(0%, 30%);
 }
-.score__diamont--1st-base {
+.score__diamond--1st-base {
   position: absolute;
   width: 200px;
   height: 200px;
   transform:translate(15%, 15%);
 }
-.score__diamont--2nd-base {
+.score__diamond--2nd-base {
   position: absolute;
   width: 200px;
   height: 200px;
   transform:translate(0, 0);
 }
-.score__diamont--3rd-base {
+.score__diamond--3rd-base {
   position: absolute;
   width: 200px;
   height: 200px;
