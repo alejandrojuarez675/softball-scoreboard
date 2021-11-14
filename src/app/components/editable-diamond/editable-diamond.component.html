@@ -1,0 +1,44 @@
+<div class="score__diamont--block">
+  <div class="score__diamond--position">
+    <div class="score__diamont--2nd-base">
+      <div
+      class="diamond"
+      [ngClass]="{
+        'score__diamont--enabled-color': base2,
+        'score__diamont--disabled-color': !base2
+      }"
+      (click)="onClick(2)"
+      ></div>
+    </div>
+    <div class="score__diamont--3rd-base">
+      <div
+      class="diamond"
+      [ngClass]="{
+        'score__diamont--enabled-color': base3,
+        'score__diamont--disabled-color': !base3
+      }"
+      (click)="onClick(3)"
+      ></div>
+    </div>
+    <div class="score__diamont--1st-base">
+      <div
+        class="diamond"
+        [ngClass]="{
+          'score__diamont--enabled-color': base1,
+          'score__diamont--disabled-color': !base1
+        }"
+        (click)="onClick(1)"
+      ></div>
+    </div>
+    <div class="score__diamont--home-plate">
+      <div
+      class="diamond"
+      [ngClass]="{
+        'score__diamont--enabled-color': base4,
+          'score__diamont--disabled-color': !base4
+        }"
+        (click)="onClick(4)"
+      ></div>
+    </div>
+  </div>
+</div>

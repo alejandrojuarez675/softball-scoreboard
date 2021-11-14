@@ -37,6 +37,14 @@ export class ScoreboardService {
     this.cookieService.deleteAll();
   }
 
+  changeBooleanValue(key: string) {
+    let oldValue = this.cookieService.get(key);
+    if (!oldValue) {
+      oldValue = 'false';
+    }
+    this.cookieService.set(key, '' + !(oldValue === 'true'))
+  }
+
   getData(key: string): Observable<string> {
     return timer(1000, 1000).pipe(map(() => this.cookieService.get(key)));
   }

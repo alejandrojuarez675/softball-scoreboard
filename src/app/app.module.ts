@@ -9,6 +9,7 @@ import { ScoreboardComponent } from './components/scoreboard/scoreboard.componen
 import { ScoreboardService } from './services/scoreboard.service';
 import { EditableNumberComponent } from './components/editable-number/editable-number.component';
 import { EditableTextComponent } from './components/editable-text/editable-text.component';
+import { EditableDiamondComponent } from './components/editable-diamond/editable-diamond.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { EditableTextComponent } from './components/editable-text/editable-text.
     DisplayPageComponent,
     ScoreboardComponent,
     EditableNumberComponent,
-    EditableTextComponent
+    EditableTextComponent,
+    EditableDiamondComponent
   ],
   imports: [
     BrowserModule,
