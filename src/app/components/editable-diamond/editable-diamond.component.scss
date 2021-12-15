@@ -21,8 +21,8 @@
 }
 
 .diamond {
-  width: 20%;
-  height: 20%;
+  width: 30%;
+  height: 30%;
   transform: rotate(45deg);
 }
 
@@ -36,7 +36,7 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  transform:translate(15%, 15%);
+  transform:translate(22%, 22%);
 }
 .score__diamond--2nd-base {
   position: absolute;
@@ -48,5 +48,5 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  transform:translate(-15%, 15%);
+  transform:translate(-22%, 22%);
 }
