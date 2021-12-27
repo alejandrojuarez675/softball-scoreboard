@@ -1,37 +1,40 @@
 <div>
   <div class="container">
-      <div class="row py-3"></div>
+      <div class="row"></div>
       <div class="row">
-          <div class="col-3">
-              <div class="row">
-                  <div class="col px-5"><div class="py-1 score__title"># AT BAT</div></div>
-              </div>
-              <div class="row">
-                  <div class="col px-5"><app-editable-text [isEditable]="isEditable" key="BATTER"></app-editable-text></div>
-              </div>
-          </div>
-
-          <div class="col-6">
-              <div class="row">
-                  <div class="col px-5"><div class="py-1 score__title">BALL</div></div>
-                  <div class="col px-5"><div class="py-1 score__title">STRIKE</div></div>
-                  <div class="col px-5"><div class="py-1 score__title">OUT</div></div>
-              </div>
-              <div class="row">
-                <div class="col px-5"><app-editable-number [isEditable]="isEditable" key="Ball" defaultValue="0"></app-editable-number></div>
-                <div class="col px-5"><app-editable-number [isEditable]="isEditable" key="Strike" defaultValue="0"></app-editable-number></div>
-                <div class="col px-5"><app-editable-number [isEditable]="isEditable" key="Out" defaultValue="0"></app-editable-number></div>
-              </div>
-          </div>
-
-          <div class="col-1"></div>
-
-
           <div class="col-2">
+            <div class="row">
+                <div class="col"><div class="py-1 score__title"># AT BAT</div></div>
+            </div>
+            <div class="row">
+                <div class="col"><app-editable-text [isEditable]="isEditable" key="BATTER"></app-editable-text></div>
+            </div>
+          </div>
+
+          <div class="col-7">
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-10">
+                <div class="row">
+                    <div class="col"><div class="py-1 score__title-2">BALL</div></div>
+                    <div class="col"><div class="py-1 score__title-2">STRIKE</div></div>
+                    <div class="col"><div class="py-1 score__title-2">OUT</div></div>
+                </div>
+                <div class="row">
+                  <div class="col"><app-editable-number [isEditable]="isEditable" key="Ball" defaultValue="0"></app-editable-number></div>
+                  <div class="col"><app-editable-number [isEditable]="isEditable" key="Strike" defaultValue="0"></app-editable-number></div>
+                  <div class="col"><app-editable-number [isEditable]="isEditable" key="Out" defaultValue="0"></app-editable-number></div>
+                </div>
+              </div>
+              <div class="col-1"></div>
+            </div>
+          </div>
+
+          <div class="col-3">
             <app-editable-diamond [isEditable]="isEditable"></app-editable-diamond>
           </div>
       </div>
-      <div class="row my-3"></div>
+      <div class="row my-5"></div>
       <div class="row">
         <div class="col-9">
           <div class="row">
