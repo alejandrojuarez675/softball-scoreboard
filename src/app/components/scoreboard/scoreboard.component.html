@@ -1,5 +1,5 @@
 <div>
-  <div class="m-2">
+  <div class="container">
       <div class="row py-3"></div>
       <div class="row">
           <div class="col-3">
@@ -33,56 +33,79 @@
       </div>
       <div class="row my-3"></div>
       <div class="row">
-          <div class="col-2"><div class="p-1 score__title"></div></div>
-          <div class="col"><div class="p-1 score__title">1</div></div>
-          <div class="col"><div class="p-1 score__title">2</div></div>
-          <div class="col"><div class="p-1 score__title">3</div></div>
-          <div class="col"><div class="p-1 score__title">4</div></div>
-          <div class="col"><div class="p-1 score__title">5</div></div>
-          <div class="col"><div class="p-1 score__title">6</div></div>
-          <div class="col"><div class="p-1 score__title">7</div></div>
-          <div class="col"><div class="p-1 score__title">E</div></div>
+        <div class="col-9">
+          <div class="row">
+            <div class="col-3"><div class="p-1 score__title"></div></div>
+            <div class="col-1"><div class="p-1 score__title">1</div></div>
+            <div class="col-1"><div class="p-1 score__title">2</div></div>
+            <div class="col-1"><div class="p-1 score__title">3</div></div>
+            <div class="col-1"><div class="p-1 score__title">4</div></div>
+            <div class="col-1"><div class="p-1 score__title">5</div></div>
+            <div class="col-1"><div class="p-1 score__title">6</div></div>
+            <div class="col-1"><div class="p-1 score__title">7</div></div>
+            <div class="col-1"><div class="p-1 score__title">E</div></div>
+            <div class="col-1"></div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row">
+            <div class="col-4"><div class="p-1 score__title">R</div></div>
+            <div class="col-4"><div class="p-1 score__title">H</div></div>
+            <div class="col-4"><div class="p-1 score__title">E</div></div>
+          </div>
+        </div>
 
-          <div class="col"></div>
-
-          <div class="col"><div class="p-1 score__title">R</div></div>
-          <div class="col"><div class="p-1 score__title">H</div></div>
-          <div class="col"><div class="p-1 score__title">E</div></div>
       </div>
       <div class="row">
-          <div class="col-2"><app-editable-text [isEditable]="isEditable" key="L_NAME"></app-editable-text></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="L1"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="L2"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="L3"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="L4"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="L5"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="L6"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="L7"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="L8"></app-editable-number></div>
+        <div class="col-9">
+          <div class="row">
+            <div class="col-3"><app-editable-text [isEditable]="isEditable" key="L_NAME"></app-editable-text></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="L1"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="L2"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="L3"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="L4"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="L5"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="L6"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="L7"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="L8"></app-editable-number></div>
 
-          <div class="col"></div>
+            <div class="col-1"></div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row">
+            <div class="col-4"><app-editable-number [isEditable]="isEditable" key="LR" defaultValue="0"></app-editable-number></div>
+            <div class="col-4"><app-editable-number [isEditable]="isEditable" key="LH" defaultValue="0"></app-editable-number></div>
+            <div class="col-4"><app-editable-number [isEditable]="isEditable" key="LE" defaultValue="0"></app-editable-number></div>
+          </div>
+        </div>
 
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="LR" defaultValue="0"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="LH" defaultValue="0"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="LE" defaultValue="0"></app-editable-number></div>
       </div>
       <div class="row m-2"></div>
       <div class="row">
-          <div class="col-2"><app-editable-text [isEditable]="isEditable" key="V_NAME"></app-editable-text></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="V1"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="V2"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="V3"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="V4"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="V5"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="V6"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="V7"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="V8"></app-editable-number></div>
+        <div class="col-9">
+          <div class="row">
+            <div class="col-3"><app-editable-text [isEditable]="isEditable" key="V_NAME"></app-editable-text></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="V1"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="V2"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="V3"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="V4"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="V5"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="V6"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="V7"></app-editable-number></div>
+            <div class="col-1"><app-editable-number [isEditable]="isEditable" key="V8"></app-editable-number></div>
 
-          <div class="col"></div>
+            <div class="col-1"></div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row">
+            <div class="col-4"><app-editable-number [isEditable]="isEditable" key="VR" defaultValue="0"></app-editable-number></div>
+            <div class="col-4"><app-editable-number [isEditable]="isEditable" key="VH" defaultValue="0"></app-editable-number></div>
+            <div class="col-4"><app-editable-number [isEditable]="isEditable" key="VE" defaultValue="0"></app-editable-number></div>
+          </div>
+        </div>
 
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="VR" defaultValue="0"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="VH" defaultValue="0"></app-editable-number></div>
-          <div class="col"><app-editable-number [isEditable]="isEditable" key="VE" defaultValue="0"></app-editable-number></div>
       </div>
       <div class="row my-3"></div>
   </div>
