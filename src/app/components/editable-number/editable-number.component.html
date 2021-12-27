@@ -3,13 +3,13 @@
     <div class="p-1 score__inning">{{ value || defaultValue }}</div>
   </div>
   <ng-container *ngIf="isEditable">
-    <div class="btn-group w-100">
-      <button type="button" class="w-100" (click)="subsOne()">-1</button>
-      <button type="button" class="w-100" (click)="addOne()">+1</button>
+    <div class="row">
+      <button type="button" class="col-6 small" (click)="subsOne()">-1</button>
+      <button type="button" class="col-6 small" (click)="addOne()">+1</button>
     </div>
-    <div class="btn-group w-100">
-      <button type="button" class="w-100" (click)="clear()">-</button>
-      <button type="button" class="w-100" (click)="setZero()">0</button>
+    <div class="row">
+      <button type="button" class="col-6 small" (click)="clear()">-</button>
+      <button type="button" class="col-6 small" (click)="setZero()">0</button>
     </div>
   </ng-container>
 </div>
