@@ -1,5 +1,7 @@
 # SoftballScoreboard
 
+## The app
+
 This project was a idea to have a simple master-slave baseball/softball scoreboard with a multi-display program in angular.
 
 The slave display:
@@ -7,5 +9,20 @@ The slave display:
 
 Master display:
 ![image](https://user-images.githubusercontent.com/44504154/147501347-fa191019-b87d-4f37-a953-5ec31fdef7f5.png)
+
+## How to deploy
+In this instance you have to install the program with:
+
+```
+$ npm i
+$ npm start
+```
+
+And the app will be running on port 4200 and you have:
+
+- Master page on '/admin'
+- Slave page on root page 
+
+## Contact me
 
 For questions alejandrojuarez675@gmail.com
