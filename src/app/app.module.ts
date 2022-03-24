@@ -10,6 +10,7 @@ import { ScoreboardService } from './services/scoreboard.service';
 import { EditableNumberComponent } from './components/editable-number/editable-number.component';
 import { EditableTextComponent } from './components/editable-text/editable-text.component';
 import { EditableDiamondComponent } from './components/editable-diamond/editable-diamond.component';
+import { AdFooterComponent } from './components/ad-footer/ad-footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EditableDiamondComponent } from './components/editable-diamond/editable
     ScoreboardComponent,
     EditableNumberComponent,
     EditableTextComponent,
-    EditableDiamondComponent
+    EditableDiamondComponent,
+    AdFooterComponent
   ],
   imports: [
     BrowserModule,
