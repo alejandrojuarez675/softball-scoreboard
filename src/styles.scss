@@ -11,3 +11,9 @@ html {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+@media (min-width: 2000px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1960px;
+  }
+}
