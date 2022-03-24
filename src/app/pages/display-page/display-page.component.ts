@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { ScoreboardService } from 'src/app/services/scoreboard.service';
 
 @Component({
@@ -9,9 +9,12 @@ import { ScoreboardService } from 'src/app/services/scoreboard.service';
 })
 export class DisplayPageComponent implements OnInit {
 
+  title$: Observable<string>;
+
   constructor(
     private scoreboardService: ScoreboardService,
   ) {
+    this.title$ = scoreboardService.getData('title');
   }
 
   ngOnInit(): void {

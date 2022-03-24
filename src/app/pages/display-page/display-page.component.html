@@ -1,5 +1,5 @@
-<div class="row border">
-  <h1 class="text-center text-white">CAMPEONATO PANAMERICANO - PARANÁ 2022</h1>
+<div class="row border" *ngIf="(title$ | async)?.length">
+  <h1 class="text-center text-white">{{(title$ | async)?.toUpperCase()}}</h1>
 </div>
 <div class="m-4"></div>
 <app-scoreboard [isEditable]="false"></app-scoreboard>
