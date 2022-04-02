@@ -9,6 +9,8 @@ import { ScoreboardService } from 'src/app/services/scoreboard.service';
 })
 export class AdminPageComponent implements OnInit {
 
+  isEditable = true;
+
   constructor(
     private scoreboardService: ScoreboardService,
   ) { }
