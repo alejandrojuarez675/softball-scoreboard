@@ -1,6 +1,6 @@
-<div *ngIf="isEditable"><button (click)="isEditable = false">Ir a display</button></div>
-<app-scoreboard [isEditable]="isEditable" *ngIf="isEditable"></app-scoreboard>
-<ng-container *ngIf="!isEditable">
+<div *ngIf="!isDisplay"><button (click)="isDisplay = true">Ir a display</button></div>
+<app-scoreboard [isEditable]="true" *ngIf="!isDisplay"></app-scoreboard>
+
+<ng-container *ngIf="isDisplay">
   <app-display-page></app-display-page>
 </ng-container>
-

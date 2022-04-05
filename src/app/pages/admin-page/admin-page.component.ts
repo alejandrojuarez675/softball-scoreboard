@@ -9,7 +9,7 @@ import { ScoreboardService } from 'src/app/services/scoreboard.service';
 })
 export class AdminPageComponent implements OnInit {
 
-  isEditable = true;
+  isDisplay = false;
 
   constructor(
     private scoreboardService: ScoreboardService,
