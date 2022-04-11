@@ -1,6 +1,6 @@
 # SoftballScoreboard
 
-# Online Demo
+## Online Demo
 https://alejandrojuarez675.github.io/softball-scoreboard 
 
 ## The app
