@@ -13,18 +13,21 @@ The slave display:
 Master display:
 ![image](https://user-images.githubusercontent.com/44504154/147501347-fa191019-b87d-4f37-a953-5ec31fdef7f5.png)
 
-## How to deploy
+## How to run
 In this instance you have to install the program with:
 
 ```
 $ npm i
 $ npm start
 ```
-
 And the app will be running on port 4200 and you have:
 
-- Master page on '/admin'
-- Slave page on root page 
+## How to deploy
+In this instance you have to install the program with:
+
+```
+$ npm run deploy
+```
 
 ## Contact me
 
