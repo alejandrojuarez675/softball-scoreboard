@@ -12,6 +12,7 @@ import { EditableTextComponent } from './components/editable-text/editable-text.
 import { EditableDiamondComponent } from './components/editable-diamond/editable-diamond.component';
 import { AdFooterComponent } from './components/ad-footer/ad-footer.component';
 import { EditableTitleComponent } from './components/editable-title/editable-title.component';
+import { DisplayPageV2Component } from './pages/display-page-v2/display-page-v2.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { EditableTitleComponent } from './components/editable-title/editable-tit
     EditableTextComponent,
     EditableDiamondComponent,
     AdFooterComponent,
-    EditableTitleComponent
+    EditableTitleComponent,
+    DisplayPageV2Component
   ],
   imports: [
     BrowserModule,
