@@ -25,7 +25,6 @@ export class EditableTextComponent implements OnInit {
   ngOnInit(): void {
     this.scoreboardService.getData(this.key).subscribe(v => {
       this.value = v.toUpperCase();
-      this.newValue.nativeElement.value = v.toUpperCase();
     });
   }
 
