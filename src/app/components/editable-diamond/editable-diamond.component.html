@@ -30,6 +30,9 @@
         (click)="onClick(1)"
       ></div>
     </div>
+    <div class="text-white" style="padding-top: 130px; font-size: 72px; margin-left: -149px;" [hidden]="isEditable">
+      {{ atBat ? "AT BAT #" + atBat : "" }}
+    </div>
     <!-- <div class="score__diamond--home-plate">
       <div
       class="diamond"

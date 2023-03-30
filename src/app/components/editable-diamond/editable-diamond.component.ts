@@ -14,6 +14,7 @@ export class EditableDiamondComponent implements OnInit {
   base2 = false;
   base3 = false;
   base4 = false;
+  atBat = "";
 
   constructor(
     private scoreboardService: ScoreboardService,
@@ -23,7 +24,7 @@ export class EditableDiamondComponent implements OnInit {
     this.scoreboardService.getData('b1').subscribe(v => this.base1 = v === 'true');
     this.scoreboardService.getData('b2').subscribe(v => this.base2 = v === 'true');
     this.scoreboardService.getData('b3').subscribe(v => this.base3 = v === 'true');
-    this.scoreboardService.getData('b4').subscribe(v => this.base4 = v === 'true');
+    this.scoreboardService.getData('BATTER').subscribe(v => this.atBat = v);
   }
 
   onClick(base: number) {
