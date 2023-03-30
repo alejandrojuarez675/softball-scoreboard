@@ -23,6 +23,7 @@ export class DisplayPageV2Component implements OnInit {
   visitanteName$: Observable<string>;
   inning$: Observable<string>;
   startInning$: Observable<boolean>;
+  speed$: Observable<string>;
 
   constructor(
     scoreboardService: ScoreboardService,
@@ -42,6 +43,7 @@ export class DisplayPageV2Component implements OnInit {
     this.inning$ = scoreboardService.getData('Inning').pipe(
       map( v => v.split('a')[0].split('c')[0])
     );
+    this.speed$ = scoreboardService.getData('SPEED');
   }
 
   ngOnInit(): void {

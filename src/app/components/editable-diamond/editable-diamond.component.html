@@ -30,7 +30,10 @@
         (click)="onClick(1)"
       ></div>
     </div>
-    <div class="text-white" style="padding-top: 130px; font-size: 72px; margin-left: -149px;" [hidden]="isEditable">
+    <div class="text-white" style="padding-top: 130px; font-size: 72px; margin-left: -70px;" [hidden]="isEditable || !speed">
+      {{ speed + " mph"}}
+    </div>
+    <div class="text-white" style="padding-top: 130px; font-size: 72px; margin-left: -149px;" [hidden]="isEditable || speed">
       {{ atBat ? "AT BAT #" + atBat : "" }}
     </div>
     <!-- <div class="score__diamond--home-plate">

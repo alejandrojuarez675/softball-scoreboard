@@ -14,6 +14,7 @@ import { AdFooterComponent } from './components/ad-footer/ad-footer.component';
 import { EditableTitleComponent } from './components/editable-title/editable-title.component';
 import { DisplayPageV2Component } from './pages/display-page-v2/display-page-v2.component';
 import { EditableInningComponent } from './components/editable-inning/editable-inning.component';
+import { EditableSpeedComponent } from './components/editable-speed/editable-speed.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { EditableInningComponent } from './components/editable-inning/editable-i
     AdFooterComponent,
     EditableTitleComponent,
     DisplayPageV2Component,
-    EditableInningComponent
+    EditableInningComponent,
+    EditableSpeedComponent
   ],
   imports: [
     BrowserModule,

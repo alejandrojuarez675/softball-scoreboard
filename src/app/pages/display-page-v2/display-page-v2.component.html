@@ -46,7 +46,7 @@
       </div>
 
       <div class="col-3 p-5">
-        <app-editable-diamond [isEditable]="isEditable"></app-editable-diamond>
+        <app-editable-diamond [isEditable]="isEditable" [speed]="(speed$ | async) || ''"></app-editable-diamond>
       </div>
     </div>
 

@@ -3,30 +3,24 @@
       <app-editable-title *ngIf="isEditable" [isEditable]="isEditable"></app-editable-title>
       <div class="row"></div>
       <div class="row">
-          <div class="col-2">
+          <div class="col-9">
             <div class="row">
-                <div class="col"><div class="py-1 score__title"># AT BAT</div></div>
-            </div>
-            <div class="row">
-                <div class="col"><app-editable-text [isEditable]="isEditable" key="BATTER"></app-editable-text></div>
-            </div>
-          </div>
-
-          <div class="col-7">
-            <div class="row">
-              <div class="col-1"></div>
               <div class="col-10 border">
                 <div class="row">
-                    <div class="col-3"><div class="py-1 score__title-2">BALL</div></div>
-                    <div class="col-3"><div class="py-1 score__title-2">STRIKE</div></div>
-                    <div class="col-3"><div class="py-1 score__title-2">OUT</div></div>
-                    <div class="col-3"><div class="py-1 score__title-2">INNING</div></div>
+                    <div class="col-2"><div class="py-1 score__title-2"># BAT</div></div>
+                    <div class="col-2"><div class="py-1 score__title-2">BALL</div></div>
+                    <div class="col-2"><div class="py-1 score__title-2">STRIKE</div></div>
+                    <div class="col-2"><div class="py-1 score__title-2">OUT</div></div>
+                    <div class="col-2"><div class="py-1 score__title-2">INNING</div></div>
+                    <div class="col-2"><div class="py-1 score__title-2">SPEED</div></div>
                 </div>
                 <div class="row">
-                  <div class="col-3"><app-editable-number [isEditable]="isEditable" key="Ball" defaultValue="0"></app-editable-number></div>
-                  <div class="col-3"><app-editable-number [isEditable]="isEditable" key="Strike" defaultValue="0"></app-editable-number></div>
-                  <div class="col-3"><app-editable-number [isEditable]="isEditable" key="Out" defaultValue="0"></app-editable-number></div>
-                  <div class="col-3"><app-editable-inning></app-editable-inning></div>
+                  <div class="col-2"><app-editable-text [isEditable]="isEditable" key="BATTER"></app-editable-text></div>
+                  <div class="col-2"><app-editable-number [isEditable]="isEditable" key="Ball" defaultValue="0"></app-editable-number></div>
+                  <div class="col-2"><app-editable-number [isEditable]="isEditable" key="Strike" defaultValue="0"></app-editable-number></div>
+                  <div class="col-2"><app-editable-number [isEditable]="isEditable" key="Out" defaultValue="0"></app-editable-number></div>
+                  <div class="col-2"><app-editable-inning></app-editable-inning></div>
+                  <div class="col-2"><app-editable-speed></app-editable-speed></div>
                 </div>
               </div>
               <div class="col-1"></div>

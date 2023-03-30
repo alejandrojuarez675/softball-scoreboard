@@ -9,6 +9,7 @@ import { ScoreboardService } from 'src/app/services/scoreboard.service';
 export class EditableDiamondComponent implements OnInit {
 
   @Input() isEditable: boolean = false;
+  @Input() speed: String = ""
 
   base1 = false;
   base2 = false;
