@@ -29,7 +29,7 @@ export class EditableTextComponent implements OnInit {
   update() {
     this.scoreboardService.updateData(this.key, this.newValue.nativeElement.value);
     this.value = this.newValue.nativeElement.value;
-    this.newValue.nativeElement.value = '';
+    //this.newValue.nativeElement.value = '';
   }
 
 }

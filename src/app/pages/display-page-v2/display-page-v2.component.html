@@ -9,15 +9,15 @@
 
       <div class="col-4 p-5">
         <div class="row">
-          <div class="col-7 bg-black text-center my-font-size-l">ARG</div>
+          <div class="col-7 bg-black text-center my-font-size-l">{{ localName$ | async }}</div>
           <div class="col-1 my-font-size-l"></div>
-          <div class="col-4 bg-black text-center my-font-size-l">12</div>
+          <div class="col-4 bg-black text-center my-font-size-l">{{ (localRuns$ | async) || 0 }}</div>
         </div>
         <div class="row mt-3"></div>
         <div class="row">
-          <div class="col-7 bg-black text-center my-font-size-l">AUS</div>
+          <div class="col-7 bg-black text-center my-font-size-l">{{ visitanteName$ | async }}</div>
           <div class="col-1 my-font-size-l"></div>
-          <div class="col-4 bg-black text-center my-font-size-l">2</div>
+          <div class="col-4 bg-black text-center my-font-size-l">{{ (visitanteRuns$ | async) || 0 }}</div>
         </div>
       </div>
 
@@ -32,13 +32,13 @@
       <div class="col-3 p-5 ps-0">
         <div class="row my-font-size-l">
           <div class="col-12 text-center bg-black ">
-            2-0
+            {{ (balls$ | async) || 0 }}-{{ (strikes$ | async) || 0}}
           </div>
         </div>
         <div class="row mt-3"></div>
         <div class="row my-font-size-l">
           <div class="col-12 text-center bg-black ">
-            2 OUTS
+            {{ (outs$ | async) || 0}} OUTS
           </div>
         </div>
       </div>
