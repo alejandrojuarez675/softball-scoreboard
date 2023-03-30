@@ -13,6 +13,7 @@ import { EditableDiamondComponent } from './components/editable-diamond/editable
 import { AdFooterComponent } from './components/ad-footer/ad-footer.component';
 import { EditableTitleComponent } from './components/editable-title/editable-title.component';
 import { DisplayPageV2Component } from './pages/display-page-v2/display-page-v2.component';
+import { EditableInningComponent } from './components/editable-inning/editable-inning.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DisplayPageV2Component } from './pages/display-page-v2/display-page-v2.
     EditableDiamondComponent,
     AdFooterComponent,
     EditableTitleComponent,
-    DisplayPageV2Component
+    DisplayPageV2Component,
+    EditableInningComponent
   ],
   imports: [
     BrowserModule,

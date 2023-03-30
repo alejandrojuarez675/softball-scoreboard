@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
+import { map } from 'rxjs/operators';
 import { ScoreboardService } from 'src/app/services/scoreboard.service';
 
 @Component({
@@ -20,6 +21,8 @@ export class DisplayPageV2Component implements OnInit {
   visitanteRuns$: Observable<string>;
   localName$: Observable<string>;
   visitanteName$: Observable<string>;
+  inning$: Observable<string>;
+  startInning$: Observable<boolean>;
 
   constructor(
     scoreboardService: ScoreboardService,
@@ -33,6 +36,12 @@ export class DisplayPageV2Component implements OnInit {
     this.visitanteRuns$ = scoreboardService.getData('VR');
     this.localName$ = scoreboardService.getData('L_NAME');
     this.visitanteName$ = scoreboardService.getData('V_NAME');
+    this.startInning$ = scoreboardService.getData('Inning').pipe(
+      map( v => v.includes('a'))
+    );
+    this.inning$ = scoreboardService.getData('Inning').pipe(
+      map( v => v.split('a')[0].split('c')[0])
+    );
   }
 
   ngOnInit(): void {

@@ -23,9 +23,11 @@
 
       <div class="col-2 p-5 ps-0">
         <div class="bg-black text-center">
-          <div class="triangle-up-enabled mt-1" style="margin-left: 100px;"></div> <!-- init inning -->
-          <span class="my-font-size-xl">5</span> <!-- inning -->
-          <div class="triangle-down-disabled mb-1" style="margin-left: 100px;"></div> <!-- close inning -->
+          <div *ngIf="startInning$ | async" class="triangle-up-enabled mt-1" style="margin-left: 100px;"></div> <!-- init inning -->
+          <div *ngIf="!(startInning$ | async)" class="triangle-up-disabled mt-1" style="margin-left: 100px;"></div> <!-- init inning -->
+          <span class="my-font-size-xl">{{ inning$ | async }}</span> <!-- inning -->
+          <div *ngIf="!(startInning$ | async)" class="triangle-down-enabled mb-1" style="margin-left: 100px;"></div> <!-- close inning -->
+          <div *ngIf="startInning$ | async" class="triangle-down-disabled mb-1" style="margin-left: 100px;"></div> <!-- close inning -->
         </div>
       </div>
 

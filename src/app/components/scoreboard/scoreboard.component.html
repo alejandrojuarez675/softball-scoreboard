@@ -17,14 +17,16 @@
               <div class="col-1"></div>
               <div class="col-10 border">
                 <div class="row">
-                    <div class="col-4"><div class="py-1 score__title-2">BALL</div></div>
-                    <div class="col-4"><div class="py-1 score__title-2">STRIKE</div></div>
-                    <div class="col-4"><div class="py-1 score__title-2">OUT</div></div>
+                    <div class="col-3"><div class="py-1 score__title-2">BALL</div></div>
+                    <div class="col-3"><div class="py-1 score__title-2">STRIKE</div></div>
+                    <div class="col-3"><div class="py-1 score__title-2">OUT</div></div>
+                    <div class="col-3"><div class="py-1 score__title-2">INNING</div></div>
                 </div>
                 <div class="row">
-                  <div class="col-4"><app-editable-number [isEditable]="isEditable" key="Ball" defaultValue="0"></app-editable-number></div>
-                  <div class="col-4"><app-editable-number [isEditable]="isEditable" key="Strike" defaultValue="0"></app-editable-number></div>
-                  <div class="col-4"><app-editable-number [isEditable]="isEditable" key="Out" defaultValue="0"></app-editable-number></div>
+                  <div class="col-3"><app-editable-number [isEditable]="isEditable" key="Ball" defaultValue="0"></app-editable-number></div>
+                  <div class="col-3"><app-editable-number [isEditable]="isEditable" key="Strike" defaultValue="0"></app-editable-number></div>
+                  <div class="col-3"><app-editable-number [isEditable]="isEditable" key="Out" defaultValue="0"></app-editable-number></div>
+                  <div class="col-3"><app-editable-inning></app-editable-inning></div>
                 </div>
               </div>
               <div class="col-1"></div>

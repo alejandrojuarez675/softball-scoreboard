@@ -1,0 +1,22 @@
+<div class="p-1">
+  <div class="row">
+    <div class="p-1 score__inning">
+      <div *ngIf="start" class="row">
+        <div class="col-6"></div>
+        <div class="triangle-up-enabled mt-1" style="margin-left: -20px;"></div> <!-- init inning -->
+      </div>
+      {{ value }}
+      <div *ngIf="!start" class="row">
+        <div class="col-6"></div>
+        <div class="triangle-down-enabled mt-1" style="margin-left: -20px;"></div> <!-- init inning -->
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <button type="button" class="col-6 small" (click)="subsOne()">-1</button>
+    <button type="button" class="col-6 small" (click)="addOne()">+1</button>
+  </div>
+  <div class="row">
+    <button type="button" class="col-12 small" (click)="clear()">-</button>
+  </div>
+</div>
