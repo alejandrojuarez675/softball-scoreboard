@@ -8,7 +8,8 @@ https://alejandrojuarez675.github.io/softball-scoreboard
 This project was a idea to have a simple master-slave baseball/softball scoreboard with a multi-display program in angular.
 
 The slave display:
-![image](https://user-images.githubusercontent.com/44504154/147501246-1fc5efc8-e221-49b2-98c6-58ab6c962003.png)
+![512b0dea-97ab-40fe-a235-137bd2ae2b9a](https://user-images.githubusercontent.com/108878648/229185559-4cae96f1-5c7e-4f79-86ec-2aa2ee337397.jpg)
+
 
 Master display:
 ![image](https://user-images.githubusercontent.com/44504154/147501347-fa191019-b87d-4f37-a953-5ec31fdef7f5.png)
