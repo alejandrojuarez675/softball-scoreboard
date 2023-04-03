@@ -3,7 +3,7 @@
     <ng-container *ngIf="speed && +speed >= 80">
       <img width="260" src="https://github.com/alejandrojuarez675/softball-scoreboard/blob/main/src/assets/img/very-fast-ball.png?raw=true">
     </ng-container>
-    <ng-container *ngIf="+speed <= 80">
+    <ng-container *ngIf="+speed < 80">
       <img width="260" src="https://github.com/alejandrojuarez675/softball-scoreboard/blob/main/src/assets/img/change-ball.png?raw=true">
     </ng-container>
     <div class="text-white" style="font-size: 72px; padding-left: 30px;">
