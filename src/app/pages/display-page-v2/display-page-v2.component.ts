@@ -35,8 +35,8 @@ export class DisplayPageV2Component implements OnInit {
     this.outs$ = scoreboardService.getData('Out');
     this.localRuns$ = scoreboardService.getData('LR');
     this.visitanteRuns$ = scoreboardService.getData('VR');
-    this.localName$ = scoreboardService.getData('L_NAME');
-    this.visitanteName$ = scoreboardService.getData('V_NAME');
+    this.localName$ = scoreboardService.getData('L_NAME').pipe( map(v => v?.toUpperCase() || ""));
+    this.visitanteName$ = scoreboardService.getData('V_NAME').pipe( map(v => v?.toUpperCase() || ""));
     this.startInning$ = scoreboardService.getData('Inning').pipe(
       map( v => v.includes('a'))
     );
