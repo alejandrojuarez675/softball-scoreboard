@@ -10,6 +10,7 @@ import { ScoreboardService } from 'src/app/services/scoreboard.service';
 export class AdminPageComponent implements OnInit {
 
   isDisplay = false;
+  isDisplayMini = false;
 
   constructor(
     private scoreboardService: ScoreboardService,

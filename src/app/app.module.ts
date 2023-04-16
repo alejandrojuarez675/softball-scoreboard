@@ -15,6 +15,7 @@ import { EditableTitleComponent } from './components/editable-title/editable-tit
 import { DisplayPageV2Component } from './pages/display-page-v2/display-page-v2.component';
 import { EditableInningComponent } from './components/editable-inning/editable-inning.component';
 import { EditableSpeedComponent } from './components/editable-speed/editable-speed.component';
+import { DisplayMiniPageComponent } from './pages/display-mini-page/display-mini-page.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EditableSpeedComponent } from './components/editable-speed/editable-spe
     EditableTitleComponent,
     DisplayPageV2Component,
     EditableInningComponent,
-    EditableSpeedComponent
+    EditableSpeedComponent,
+    DisplayMiniPageComponent
   ],
   imports: [
     BrowserModule,

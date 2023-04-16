@@ -1,6 +1,13 @@
-<div *ngIf="!isDisplay"><button (click)="isDisplay = true">Ir a display</button></div>
-<app-scoreboard [isEditable]="true" *ngIf="!isDisplay"></app-scoreboard>
+<div *ngIf="!isDisplay && !isDisplayMini">
+  <button (click)="isDisplay = true">Ir a display</button>
+  <button (click)="isDisplayMini = true">Ir a display mini</button>
+</div>
+<app-scoreboard [isEditable]="true" *ngIf="!isDisplay && !isDisplayMini"></app-scoreboard>
 
 <ng-container *ngIf="isDisplay">
   <app-display-page-v2></app-display-page-v2>
 </ng-container>
+<ng-container *ngIf="isDisplayMini">
+  <app-display-mini-page></app-display-mini-page>
+</ng-container>
+
