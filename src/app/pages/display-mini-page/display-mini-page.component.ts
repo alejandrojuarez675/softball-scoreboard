@@ -24,6 +24,7 @@ export class DisplayMiniPageComponent implements OnInit {
   inning$: Observable<string>;
   startInning$: Observable<boolean>;
   speed$: Observable<string>;
+  mobile: boolean = false;
 
   constructor(
     scoreboardService: ScoreboardService,
@@ -47,5 +48,8 @@ export class DisplayMiniPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (window.screen.width < 600) { // 768px portrait
+      this.mobile = true;
+    }
   }
 }
