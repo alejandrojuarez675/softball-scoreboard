@@ -34,6 +34,7 @@
             <div *ngIf="!(startInning$ | async)" class="triangle-up-disabled" style="padding-top: 100px;"></div> <!-- init inning -->
           </div>
           <span class="my-font-size-xxl" style="line-height: 180px;">{{ inning$ | async }}</span> <!-- inning -->
+          <div class="row mt-5"></div>
           <div class="row d-flex justify-content-center">
             <div *ngIf="!(startInning$ | async)" class="triangle-down-enabled mb-1" style="padding-bottom: 10px;"></div> <!-- close inning -->
             <div *ngIf="startInning$ | async" class="text-center triangle-down-disabled mb-1" style=" padding-bottom: 10px;"></div> <!-- close inning -->
