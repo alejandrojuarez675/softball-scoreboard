@@ -5,56 +5,56 @@
       <div class="row mt-3"></div>
 
       <div class="row border" *ngIf="(title$ | async)?.length">
-        <h1 class="text-center text-white my-font-size-s">{{(title$ | async)?.toUpperCase()}}</h1>
+        <h1 class="text-center text-white my-font-size-m">{{(title$ | async)?.toUpperCase()}}</h1>
       </div>
     </ng-container>
 
 
-    <div class="row mt-3"></div>
+    <div class="row mt-5"></div>
 
     <div class="row">
       <div class="col-9">
         <div class="row">
-          <div class="col-6 bg-black text-center my-font-size-m">{{ localName$ | async }}</div>
+          <div class="col-6 bg-black text-center my-font-size-xl">{{ localName$ | async }}</div>
           <div class="col-1 my-font-size-s"></div>
-          <div class="col-4 bg-black text-center my-font-size-m">{{ (localRuns$ | async) || 0 }}</div>
+          <div class="col-4 bg-black text-center my-font-size-xl">{{ (localRuns$ | async) || 0 }}</div>
         </div>
         <div class="row mt-3"></div>
         <div class="row">
-          <div class="col-6 bg-black text-center my-font-size-m">{{ visitanteName$ | async }}</div>
+          <div class="col-6 bg-black text-center my-font-size-xl">{{ visitanteName$ | async }}</div>
           <div class="col-1 my-font-size-s"></div>
-          <div class="col-4 bg-black text-center my-font-size-m">{{ (visitanteRuns$ | async) || 0 }}</div>
+          <div class="col-4 bg-black text-center my-font-size-xl">{{ (visitanteRuns$ | async) || 0 }}</div>
         </div>
       </div>
 
       <div class="col-3 p-1 ps-0 bg-black align-middle">
         <div class="bg-black text-center p-3">
           <div class="row d-flex justify-content-center">
-            <div *ngIf="startInning$ | async" class="triangle-up-enabled-s" style="padding-top: 10px;"></div> <!-- init inning -->
-            <div *ngIf="!(startInning$ | async)" class="triangle-up-disabled-s" style="padding-top: 10px;"></div> <!-- init inning -->
+            <div *ngIf="startInning$ | async" class="triangle-up-enabled" style="padding-top: 100px;"></div> <!-- init inning -->
+            <div *ngIf="!(startInning$ | async)" class="triangle-up-disabled" style="padding-top: 100px;"></div> <!-- init inning -->
           </div>
-          <span class="my-font-size-l" style="line-height: 110px;">{{ inning$ | async }}</span> <!-- inning -->
+          <span class="my-font-size-xxl" style="line-height: 160px;">{{ inning$ | async }}</span> <!-- inning -->
           <div class="row d-flex justify-content-center">
-            <div *ngIf="!(startInning$ | async)" class="triangle-down-enabled-s mb-1" style="padding-bottom: 10px;"></div> <!-- close inning -->
-            <div *ngIf="startInning$ | async" class="text-center triangle-down-disabled-s mb-1" style=" padding-bottom: 10px;"></div> <!-- close inning -->
+            <div *ngIf="!(startInning$ | async)" class="triangle-down-enabled mb-1" style="padding-bottom: 10px;"></div> <!-- close inning -->
+            <div *ngIf="startInning$ | async" class="text-center triangle-down-disabled mb-1" style=" padding-bottom: 10px;"></div> <!-- close inning -->
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row mt-3"></div>
+    <div class="row mt-5"></div>
 
     <div class="row">
 
       <div class="col-6">
-        <div class="my-font-size-m">
+        <div class="my-font-size-xl">
           <div class="col-12 text-center bg-black ">
             {{ (balls$ | async) || 0 }}-{{ (strikes$ | async) || 0}}
           </div>
         </div>
       </div>
       <div class="col-6">
-        <div class="my-font-size-m">
+        <div class="my-font-size-xl">
           <div class="col-12 text-center bg-black ">
             {{ (outs$ | async) || 0}} OUTS
           </div>
